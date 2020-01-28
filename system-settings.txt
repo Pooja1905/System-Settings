@@ -79,7 +79,21 @@ sudo apt-get install --no-install-recommends \
 sudo apt-get install -y --no-install-recommends libnvinfer6=6.0.1-1+cuda10.1 \
     libnvinfer-dev=6.0.1-1+cuda10.1 \
     libnvinfer-plugin6=6.0.1-1+cuda10.1
-
-
+    
+  #Set Environment Path 
+  vim ~/.bashrc
+      export PATH=/usr/local/cuda-10.1/bin${PATH:+:${PATH}}
+      
+      export LD_LIBRARY_PATH=/usr/local/cuda-10.1/lib64\{LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+  (:wq! --save and exit)
+  
+  source ~/.bashrc
+  
+ #Install Tensorflow 2.1.0
  
+ pip3 list | grep tensorflow
  
+ pip3 install tensorflow-gpu==2.1.0
+ pip3 install tensorflow==2.1.0
+
+ pip3 list | grep tensorflow 
