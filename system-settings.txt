@@ -27,7 +27,6 @@ sudo apt-get install copyq
 #Install pip3
 sudo apt install python3-pip
 
-<<<<<<< HEAD
 #Set up nvidia drivers. (Generally you do this before all this, but I made a mistake when following tensorflow guide)
 sudo apt-get purge nvidia*
 
@@ -38,6 +37,3 @@ sudo add-apt-repository ppa:graphics-drivers
 sudo apt-get update
 
 sudo apt-get install nvidia-driver-430
-=======
-
->>>>>>> 3c9d3b8d5a1c2c301da4848aae42a54151ed2916
