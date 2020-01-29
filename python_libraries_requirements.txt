@@ -8,3 +8,4 @@ opencv-python
 keras
 h5py
 imutils
+GPUtil
